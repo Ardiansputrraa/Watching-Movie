@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".DetailMovieActivity">
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtubePlayerView"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        app:videoId="pI1YmLAJZ3M"
+        app:autoPlay="true" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="5dp">
+        <ImageView
+            android:id="@+id/imgMoviePoster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/poster_1">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="150dp"
+        android:fontFamily="sans-serif-black"
+        android:text="JUDUL FILM"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/txtGenre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="150dp"
+        android:text="Genre: Horror"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/txtDurasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="325dp"
+        android:layout_marginLeft="150dp"
+        android:text="Durasi: 1 jam 37 menit"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/txtSutradara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="150dp"
+        android:text="Sutradara: Fani Muh Ardian"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/txtRatingUsia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="375dp"
+        android:layout_marginLeft="150dp"
+        android:text="Rating usia: D 17+"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:text="Description"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="360dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="480dp"
+        android:layout_centerHorizontal="true"
+        android:text="Lorem Ipsum "
+        android:textSize="16dp"/>
+</RelativeLayout>
